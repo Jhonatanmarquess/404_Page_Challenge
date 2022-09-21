@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@600&family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --gray-one: #333333;
+  --gray-two: #4f4f4f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+}
+
+.top {
+  font-family: "Inconsolata", sans-serif;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  color: var(--gray-one);
+}
+
+.middle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.flex {
+  flex-basis: 100%;
+  width: 100%;
+}
+
+.img {
+  margin-right: 25px;
+}
+
+.flex > img {
+  max-width: 100%;
+}
+
+.text {
+  margin-left: 75px;
+}
+
+.text > h1 {
+  color: var(--gray--one);
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  margin-bottom: 36px;
+}
+
+.text > p {
+  width: 380px;
+  font-weight: normal;
+  font-size: 24px;
+  color: var(--gray--two);
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  margin-bottom: 64px;
+}
+
+.text > button {
+  padding: 24px 43px;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  background-color: var(--gray-one);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.text > button:hover {
+  background-color: rgb(204, 74, 63);
+}
+
+.bottom {
+  color: var(--gray-one);
+  text-align: center;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: var(--gray-one);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.link i {
+    
+    padding: 1px;
+    font-size: 1.5em;
+    transition: all 0.6s;
+    color: var(--gray-one);
+    margin: auto;
+    padding-top: 4px;
+}
+
+.link:hover i {
+    color: var(--gray-one);
+    transform: rotate(-15deg);
+    
+}
+
+.link:hover i.linkedin{
+    color: #1da1f2;
+    
+}
+
+.link:hover i.github{
+    color: var(--gray--one);
+    transform: rotate(+15deg);
+}
+
+
+@media screen and (max-width: 900px) {
+  .img {
+    margin-right: 0px;
+  }
+  .flex {
+    flex-basis: initial;
+  }
+  .flex > img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    margin-left: 10px;
+    max-width: 100%;
+  }
+  .text > h1 {
+    font-weight: 48px;
+    line-height: 71px;
+    margin-bottom: 30px;
+  }
+  .text > p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .middle {
+    flex-direction: column;
+  }
+  .flex {
+    width: initial;
+  }
+  .img {
+    text-align: center;
+  }
+  .flex > img {
+    width: 80%;
+    margin-bottom: 77px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .flex > img {
+    width: 100%;
+  }
+}
